@@ -24,7 +24,7 @@
       <graded_buoyancy>
           <default_density>1030</default_density>
           <density_change>
-              <above_depth>25</above_depth>
+              <above_depth>0</above_depth>
               <density>1.225</density>
           </density_change>
       </graded_buoyancy>
@@ -89,10 +89,10 @@
         <enable_wind>false</enable_wind>
       </link>
       <self_collide>false</self_collide>
-      <pose>0 0 -25.0 0 0 0</pose>
+      <pose>0 0 -5.0 0 0 0</pose>
     </model>
     <model name='support'>
-      <pose>0.6 0.0 -24.8 0 0 0</pose>
+      <pose>0.6 0.0 -4.8 0 0 0</pose>
       <link name='support_link'>
         <inertial auto='true'/>
         <collision name='support_collision'>
@@ -130,7 +130,7 @@
       <static>true</static>
     </model>
     <model name='pipe'>
-      <pose>0.78 0.45 -24.3 0 0 0</pose>
+      <pose>0.78 0.45 -4.3 0 0 0</pose>
       <link name='pipe_link'>
         <inertial auto='true'/>
         <collision name='pipe_collision'>
