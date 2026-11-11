@@ -35,7 +35,8 @@
 
     
     <include>
-      <uri>model://oil_rig_hull</uri>
+      <!--uri>model://oil_rig_hull</uri-->
+      <uri>/home/gabrielasantiago/robot_lab/src/robot_impedance_lab_1/worlds/oil_rig_hull</uri>
       <pose>6.0 0 -25.0 0 0 0</pose>
     </include>
   

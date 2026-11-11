@@ -8,20 +8,20 @@
     <static>true</static>
     <link name="estructure">
       <collision name="leg_col">
-        <pose>0 0 12.5 0 0 0</pose>
+        <pose>0 0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>4.0</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="leg_vis">
-        <pose>0 0 12.5 0 0 0</pose>
+        <pose>0 0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>4.0</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -37,20 +37,20 @@
         </material>
       </visual>
       <collision name="d1_col">
-        <pose>4.4030000000000005 -0.46 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 -0.46 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d1_vis">
-        <pose>4.4030000000000005 -0.46 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 -0.46 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -66,20 +66,20 @@
         </material>
       </visual>
       <collision name="d2_col">
-        <pose>4.4030000000000005 0.0 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 0.0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d2_vis">
-        <pose>4.4030000000000005 0.0 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 0.0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -95,20 +95,20 @@
         </material>
       </visual>
       <collision name="d3_col">
-        <pose>4.4030000000000005 0.46 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 0.46 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d3_vis">
-        <pose>4.4030000000000005 0.46 12.5 0 0 0</pose>
+        <pose>4.4030000000000005 0.46 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.203</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -124,20 +124,20 @@
         </material>
       </visual>
       <collision name="d4_col">
-        <pose>0 4.4030000000000005 12.5 0 0 0</pose>
+        <pose>0 4.4030000000000005 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d4_vis">
-        <pose>0 4.4030000000000005 12.5 0 0 0</pose>
+        <pose>0 4.4030000000000005 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -153,20 +153,20 @@
         </material>
       </visual>
       <collision name="d5_col">
-        <pose>-4.4030000000000005 0.0 12.5 0 0 0</pose>
+        <pose>-4.4030000000000005 0.0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d5_vis">
-        <pose>-4.4030000000000005 0.0 12.5 0 0 0</pose>
+        <pose>-4.4030000000000005 0.0 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
@@ -182,20 +182,20 @@
         </material>
       </visual>
       <collision name="d6_col">
-        <pose>-4.4030000000000005 0.4 12.5 0 0 0</pose>
+        <pose>-4.4030000000000005 0.4 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
       </collision>
       <visual name="d6_vis">
-        <pose>-4.4030000000000005 0.4 12.5 0 0 0</pose>
+        <pose>-4.4030000000000005 0.4 13.5 0 0 0</pose>
         <geometry>
           <cylinder>
             <radius>0.084</radius>
-            <length>25.0</length>
+            <length>27.0</length>
           </cylinder>
         </geometry>
         <material>
