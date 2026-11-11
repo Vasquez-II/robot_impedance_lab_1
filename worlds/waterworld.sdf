@@ -34,10 +34,11 @@
     <atmosphere type='adiabatic'/>
 
     
-    <!--include>
-      <uri>package://worlds/oil_rig_hull/nome_arqv</uri>
-      <pose>0 0 0 0 0 0</pose>
-    </include-->
+    <include>
+      <uri>model://oil_rig_hull</uri>
+      <pose>6.0 0 -25.0 0 0 0</pose>
+    </include>
+  
     
     <scene>
       <ambient>0.40 0.40 0.40 1</ambient>
@@ -89,10 +90,10 @@
         <enable_wind>false</enable_wind>
       </link>
       <self_collide>false</self_collide>
-      <pose>0 0 -5.0 0 0 0</pose>
+      <pose>0 0 -25.0 0 0 0</pose>
     </model>
     <model name='support'>
-      <pose>0.6 0.0 -4.8 0 0 0</pose>
+      <pose>0.6 0.0 -24.8 0 0 0</pose>
       <link name='support_link'>
         <inertial auto='true'/>
         <collision name='support_collision'>
@@ -130,7 +131,7 @@
       <static>true</static>
     </model>
     <model name='pipe'>
-      <pose>0.78 0.45 -4.3 0 0 0</pose>
+      <pose>0.78 0.45 -24.3 0 0 0</pose>
       <link name='pipe_link'>
         <inertial auto='true'/>
         <collision name='pipe_collision'>

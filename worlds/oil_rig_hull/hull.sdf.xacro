@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<sdf version="1.9" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:property name="H" value="25.0"/>
+<xacro:property name="R" value="4.0"/> <!--Diam do duto, ver-->
+<xacro:property name="r" value="0.203"/> <!--raio do duto 16 polegadas-->
+<xacro:property name="xd" value="${R + 0.2 + r}"/>
+<xacro:property name="eb" value="5.0"/>
+<xacro:property name="la" value="${R + 0.3 + 2*r}"/>
+
+<xacro:macro name="bar" params="name x y z sx sy sz">
+    <collision name="${name}_col">
+        <pose>${x} ${y} ${z} 0 0 0</pose>
+        <geometry><box><size>${sx} ${sy} ${sz}</size></box></geometry>
+    </collision>
+    <visual name="${name}_vis">
+        <pose>${x} ${y} ${z} 0 0 0</pose>
+        <geometry><box><size>${sx} ${sy} ${sz}</size></box></geometry>
+        <material><diffuse>0.6 0.45 0.15 1</diffuse></material>
+    </visual>
+</xacro:macro>
+
+<xacro:macro name="cyl" params="name x y rad leng color:='0.6 0.6 0.6 1'">
+    <collision name="${name}_col">
+        <pose>${x} ${y} ${leng/2} 0 0 0</pose>
+        <geometry><cylinder><radius>${rad}</radius><length>${leng}</length></cylinder></geometry>
+    </collision>
+    <visual name="${name}_vis">
+        <pose>${x} ${y} ${leng/2} 0 0 0</pose>
+        <geometry><cylinder><radius>${rad}</radius><length>${leng}</length></cylinder></geometry>
+        <material>
+            <!--ambient>${color}</ambient-->
+            <diffuse>${color}</diffuse>
+            <!--specular>0.8 0.8 0.8 1.0</specular> 
+            <pbr>
+                <metal>
+                    <metalness>1.0</metalness>
+                    <roughness>0.75</roughness>
+                </metal>
+            </pbr-->
+        </material>
+    </visual>
+</xacro:macro>
+
+    <model name="oil_rig_hull">
+        <static>true</static>
+        <link name="estructure">
+            <xacro:cyl name="leg" x="0" y="0" rad="${R}" leng="${H}" color="1.0 0.8 0.0 1.0"/>
+
+            <xacro:cyl name="d1" x="${xd}" y="-0.46" rad="${r}" leng="${H}"/>
+            <xacro:cyl name="d2" x="${xd}" y="0.0" rad="${r}" leng="${H}"/>
+            <xacro:cyl name="d3" x="${xd}" y="0.46" rad="${r}" leng="${H}"/>
+
+            <xacro:cyl name="d4" x="0" y="${xd}" rad="${0.084}" leng="${H}"/> <!--menores, 6 polegadas-->
+            <xacro:cyl name="d5" x="${-xd}" y="0.0" rad="${0.084}" leng="${H}"/>
+            <xacro:cyl name="d6" x="${-xd}" y="0.4" rad="${0.084}" leng="${H}"/>
+
+            <xacro:bar name="abr_1" x="${la/2}" y="0" z="${1*eb}" sx="${la}" sy="1.6" sz="0.2"/>
+            <xacro:bar name="abr_2" x="${la/2}" y="0" z="${2*eb}" sx="${la}" sy="1.6" sz="0.2"/>
+            <xacro:bar name="abr_3" x="${la/2}" y="0" z="${3*eb}" sx="${la}" sy="1.6" sz="0.2"/>
+            <xacro:bar name="abr_4" x="${la/2}" y="0" z="${4*eb}" sx="${la}" sy="1.6" sz="0.2"/>
+        </link>
+    </model>
+
+</sdf>
